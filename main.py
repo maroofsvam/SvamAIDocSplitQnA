@@ -8,7 +8,7 @@ from dotenv import load_dotenv
  
 # Get API key from environment variable
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBb2E23oQmysxkEMjE4baA_6lZ2XQTm9mI")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 def setup_gemini() -> bool:
     """Setup Gemini API with the API key from environment"""
     try:
@@ -278,4 +278,5 @@ def main():
     """)
  
 if __name__ == "__main__":
+
     main()
